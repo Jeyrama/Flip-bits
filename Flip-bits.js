@@ -14,3 +14,9 @@ For example, you can change 31 to 14 by flipping the 4th and 0th bit:
 
 
 // Solution
+
+function convertBits(a, b){
+  let x = a ^ b, count = 0;
+  do { count += x & 1 } while (x >>= 1);
+  return count;
+}
