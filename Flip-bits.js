@@ -22,3 +22,9 @@ function convertBits(a, b){
 }
 
 // or
+
+const convertBits = (a, b) => {
+  [a, b] = [Math.max(a, b).toString(2), Math.min(a, b).toString(2)];
+  b = '0'.repeat(a.length - b.length) + b;
+  return a.split``.reduce((r, e, i) => r + +(e !== b[i]), 0)
+}
