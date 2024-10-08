@@ -20,3 +20,5 @@ function convertBits(a, b){
   do { count += x & 1 } while (x >>= 1);
   return count;
 }
+
+// or
