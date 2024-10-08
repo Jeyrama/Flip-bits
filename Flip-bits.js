@@ -11,3 +11,6 @@ For example, you can change 31 to 14 by flipping the 4th and 0th bit:
   bit  7 6 5 4 3 2 1 0
   Thus 31 and 14 should return 2.
 */
+
+
+// Solution
